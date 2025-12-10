@@ -1,0 +1,112 @@
+/* CONTAINER */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+/* DESINGS BOX CRISPY */
+.crispy {
+    background-color: #FFFFFF;
+    width: 45%;  
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.25s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crispy h2 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.crispy img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;  
+    border-radius: 10px;
+}
+
+.crispy p {
+    font-family: "Reboto", sans-serif;
+    text-align: justify;
+}
+
+/* DESINGS BOX CHOCO */
+.choco {
+    background-color: #FFFFFF;
+    width: 45%; 
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.25s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choco h2 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.choco img {
+    width: 70%;  
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+.choco p {
+    font-family: "Reboto", sans-serif;
+    text-align: justify;
+}
+
+/* TRANSITION */
+.crispy:hover,
+.choco:hover {
+    transform: translateY(-4px) scale(1.01);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .crispy, .choco {
+        width: 90%;  
+    }
+
+    .crispy img, .choco img {
+        width: 80%;  
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .crispy, .choco {
+        width: 95%; 
+        margin: 10px 0; 
+    }
+
+    .crispy img, .choco img {
+        width: 90%;
+    }
+
+    .crispy p, .choco p {
+        font-size: 1rem; 
+    }
+
+    .crispy h2, .choco h2 {
+        font-size: 1.5rem; 
+    }
+}

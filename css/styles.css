@@ -1,0 +1,68 @@
+/* LOCAL FONTS */
+@font-face {
+    font-family: "Poppins";
+    src: url("/Fonts/Poppins-MediumItalic.ttf") format(truetype);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/Fonts/Roboto-Italic.ttf") format(truetype);
+}
+
+/* DESINGS BODY */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 15px;
+    color: #333333;
+
+    background-color: #F9F6F0;
+}
+
+/* DESINGS HEADER*/
+header {
+    background-color: #FF5733;
+
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+
+    border-radius: 10PX;
+}
+
+/* DESINGS NAV */
+nav {
+    background-color: #FF5733;
+
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+
+    justify-content: center;
+    flex-wrap: center;
+    gap: 8px;
+}
+
+nav a {
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 10px;
+
+    transition: background-color 0.25s ease, transform 0.18s ease;
+}
+
+nav a:hover {
+    background-color: #f0d6a3;
+    transform: translateY(-2px);
+}
